@@ -6,3 +6,5 @@ Config/Local.xcconfig
 *.xcuserstate
 xcuserdata/
 
+work/
+outputs/
