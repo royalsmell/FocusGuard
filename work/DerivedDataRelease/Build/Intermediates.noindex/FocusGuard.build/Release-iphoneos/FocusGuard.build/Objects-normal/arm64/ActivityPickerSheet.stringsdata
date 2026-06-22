@@ -1,0 +1,24 @@
+{
+  "source": "/Users/huangjiawen/Documents/Codex/2026-06-21/build-ios-apps-plugin-build-ios-2/FocusGuardApp/Sources/Views/ActivityPickerSheet.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "选择分心内容",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 11
+        }
+      },
+      {
+        "comment": "",
+        "key": "完成",
+        "location": {
+          "startingColumn": 28,
+          "startingLine": 15
+        }
+      }
+    ]
+  },
+  "version": 1
+}

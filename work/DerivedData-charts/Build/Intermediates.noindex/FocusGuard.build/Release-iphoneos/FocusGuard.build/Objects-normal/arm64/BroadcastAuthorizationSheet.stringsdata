@@ -1,0 +1,128 @@
+{
+  "source": "/Users/huangjiawen/Documents/Codex/2026-06-21/build-ios-apps-plugin-build-ios-2/FocusGuardApp/Sources/Views/BroadcastAuthorizationSheet.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "屏幕共享",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 79
+        }
+      },
+      {
+        "comment": "",
+        "key": "还没有检测到连接。请确认系统窗口里选择的是“专注守望屏幕分析”，而不是“照片”或普通屏幕录制。",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 59
+        }
+      },
+      {
+        "comment": "",
+        "key": "专注守望屏幕分析正在接收画面",
+        "location": {
+          "startingColumn": 27,
+          "startingLine": 28
+        }
+      },
+      {
+        "comment": "",
+        "key": "控制中心里的普通“屏幕录制”不会把画面交给本 App。必须从这里开启专注守望的广播扩展。",
+        "location": {
+          "startingColumn": 27,
+          "startingLine": 52
+        }
+      },
+      {
+        "comment": "",
+        "key": "完成",
+        "location": {
+          "startingColumn": 28,
+          "startingLine": 67
+        }
+      },
+      {
+        "comment": "",
+        "key": "稍后开启",
+        "location": {
+          "startingColumn": 28,
+          "startingLine": 71
+        }
+      },
+      {
+        "comment": "",
+        "key": "屏幕共享已连接",
+        "location": {
+          "startingColumn": 40,
+          "startingLine": 18
+        }
+      },
+      {
+        "comment": "",
+        "key": "开启 AI 屏幕共享",
+        "location": {
+          "startingColumn": 66,
+          "startingLine": 18
+        }
+      },
+      {
+        "comment": "",
+        "key": "现在可以离开专注守望，AI 会在屏幕广播期间继续评估画面。",
+        "location": {
+          "startingColumn": 28,
+          "startingLine": 21
+        }
+      },
+      {
+        "comment": "",
+        "key": "请点下面的系统广播按钮，再在系统窗口中点“开始广播”。",
+        "location": {
+          "startingColumn": 28,
+          "startingLine": 22
+        }
+      },
+      {
+        "comment": "",
+        "key": "系统列表出现后，请选择“专注守望屏幕分析”。",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 39
+        }
+      },
+      {
+        "comment": "",
+        "key": "点上方“授权屏幕共享”按钮",
+        "location": {
+          "startingColumn": 57,
+          "startingLine": 46
+        }
+      },
+      {
+        "comment": "",
+        "key": "在系统窗口中确认“专注守望屏幕分析”",
+        "location": {
+          "startingColumn": 57,
+          "startingLine": 47
+        }
+      },
+      {
+        "comment": "",
+        "key": "点“开始广播”，等待 3 秒倒计时",
+        "location": {
+          "startingColumn": 57,
+          "startingLine": 48
+        }
+      },
+      {
+        "comment": "",
+        "key": "%lld",
+        "location": {
+          "startingColumn": 18,
+          "startingLine": 104
+        }
+      }
+    ]
+  },
+  "version": 1
+}

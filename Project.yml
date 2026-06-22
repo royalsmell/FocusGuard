@@ -1,0 +1,177 @@
+name: FocusGuard
+options:
+  bundleIdPrefix: com.huangjiawen
+  deploymentTarget:
+    iOS: "18.0"
+  createIntermediateGroups: true
+  generateEmptyDirectories: true
+  groupSortPosition: top
+
+configFiles:
+  Debug: Config/Signing.xcconfig
+  Release: Config/Signing.xcconfig
+
+settings:
+  base:
+    SWIFT_VERSION: "6.0"
+    SWIFT_STRICT_CONCURRENCY: complete
+    SWIFT_EMIT_LOC_STRINGS: YES
+    LOCALIZATION_PREFERS_STRING_CATALOGS: YES
+    IPHONEOS_DEPLOYMENT_TARGET: "18.0"
+    TARGETED_DEVICE_FAMILY: "1,2"
+    CODE_SIGN_STYLE: Automatic
+    CURRENT_PROJECT_VERSION: "6"
+    MARKETING_VERSION: "1.2.0"
+
+targets:
+  SharedCore:
+    type: framework
+    platform: iOS
+    sources:
+      - SharedCore/Sources
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.huangjiawen.focusguard.SharedCore
+        GENERATE_INFOPLIST_FILE: YES
+        MACH_O_TYPE: staticlib
+        SKIP_INSTALL: YES
+
+  FocusGuard:
+    type: application
+    platform: iOS
+    sources:
+      - FocusGuardApp/Sources
+      - ActivityShared
+      - FocusGuardApp/Resources
+    info:
+      path: FocusGuardApp/Info.plist
+      properties:
+        CFBundleDisplayName: 专注守望
+        CFBundleShortVersionString: "$(MARKETING_VERSION)"
+        CFBundleVersion: "$(CURRENT_PROJECT_VERSION)"
+        CFBundleDevelopmentRegion: zh-Hans
+        CFBundleLocalizations: [zh-Hans, en]
+        LSApplicationCategoryType: public.app-category.productivity
+        NSLocalNetworkUsageDescription: 用于连接你在局域网中运行的视觉模型服务。
+        NSAppTransportSecurity:
+          NSAllowsLocalNetworking: true
+        UTExportedTypeDeclarations:
+          - UTTypeIdentifier: com.huangjiawen.focusguard.backup
+            UTTypeDescription: 专注守望数据归档
+            UTTypeConformsTo: [public.data]
+            UTTypeTagSpecification:
+              public.filename-extension: [focusguard]
+        NSSupportsLiveActivities: true
+        UISupportedInterfaceOrientations:
+          - UIInterfaceOrientationPortrait
+          - UIInterfaceOrientationLandscapeLeft
+          - UIInterfaceOrientationLandscapeRight
+        "UISupportedInterfaceOrientations~ipad":
+          - UIInterfaceOrientationPortrait
+          - UIInterfaceOrientationPortraitUpsideDown
+          - UIInterfaceOrientationLandscapeLeft
+          - UIInterfaceOrientationLandscapeRight
+        UILaunchScreen: {}
+    entitlements:
+      path: FocusGuardApp/FocusGuard.entitlements
+      properties:
+        com.apple.security.application-groups:
+          - group.com.huangjiawen.focusguard
+        keychain-access-groups:
+          - "$(AppIdentifierPrefix)com.huangjiawen.focusguard.shared"
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.huangjiawen.focusguard
+    dependencies:
+      - target: SharedCore
+      - target: BroadcastUploadExtension
+        embed: true
+      - target: FocusGuardWidget
+        embed: true
+
+  BroadcastUploadExtension:
+    type: app-extension
+    platform: iOS
+    sources:
+      - BroadcastUploadExtension
+      - FocusGuardApp/Resources/Localizable.xcstrings
+    info:
+      path: BroadcastUploadExtension/Info.plist
+      properties:
+        CFBundleDisplayName: 专注守望屏幕分析
+        CFBundleShortVersionString: "$(MARKETING_VERSION)"
+        CFBundleVersion: "$(CURRENT_PROJECT_VERSION)"
+        NSAppTransportSecurity:
+          NSAllowsLocalNetworking: true
+        NSExtension:
+          NSExtensionPointIdentifier: com.apple.broadcast-services-upload
+          NSExtensionPrincipalClass: "$(PRODUCT_MODULE_NAME).SampleHandler"
+          RPBroadcastProcessMode: RPBroadcastProcessModeSampleBuffer
+    entitlements:
+      path: BroadcastUploadExtension/BroadcastUpload.entitlements
+      properties:
+        com.apple.security.application-groups:
+          - group.com.huangjiawen.focusguard
+        keychain-access-groups:
+          - "$(AppIdentifierPrefix)com.huangjiawen.focusguard.shared"
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.huangjiawen.focusguard.BroadcastUpload
+        SKIP_INSTALL: YES
+    dependencies:
+      - target: SharedCore
+
+  FocusGuardWidget:
+    type: app-extension
+    platform: iOS
+    sources:
+      - FocusGuardWidget
+      - ActivityShared
+      - FocusGuardApp/Resources/Localizable.xcstrings
+    info:
+      path: FocusGuardWidget/Info.plist
+      properties:
+        CFBundleDisplayName: 专注守望实时活动
+        CFBundleShortVersionString: "$(MARKETING_VERSION)"
+        CFBundleVersion: "$(CURRENT_PROJECT_VERSION)"
+        NSExtension:
+          NSExtensionPointIdentifier: com.apple.widgetkit-extension
+    entitlements:
+      path: FocusGuardWidget/FocusGuardWidget.entitlements
+      properties:
+        com.apple.security.application-groups:
+          - group.com.huangjiawen.focusguard
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.huangjiawen.focusguard.Widget
+        SKIP_INSTALL: YES
+    dependencies:
+      - target: SharedCore
+
+  FocusGuardTests:
+    type: bundle.unit-test
+    platform: iOS
+    sources:
+      - SharedCoreTests
+      - FocusGuardTests
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.huangjiawen.focusguard.tests
+        GENERATE_INFOPLIST_FILE: YES
+    dependencies:
+      - target: SharedCore
+
+schemes:
+  FocusGuard:
+    build:
+      targets:
+        FocusGuard: all
+        FocusGuardTests: [test]
+    run:
+      config: Debug
+    test:
+      config: Debug
+      targets:
+        - FocusGuardTests
+    archive:
+      config: Release

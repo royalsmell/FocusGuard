@@ -1,0 +1,16 @@
+{
+  "" : {
+    "const-values" : "/Users/huangjiawen/Documents/Codex/2026-06-21/build-ios-apps-plugin-build-ios-2/work/DerivedDataRelease/Build/Intermediates.noindex/FocusGuard.build/Release-iphoneos/ShieldActionExtension.build/Objects-normal/arm64/ShieldActionExtension-primary.swiftconstvalues",
+    "dependencies" : "/Users/huangjiawen/Documents/Codex/2026-06-21/build-ios-apps-plugin-build-ios-2/work/DerivedDataRelease/Build/Intermediates.noindex/FocusGuard.build/Release-iphoneos/ShieldActionExtension.build/Objects-normal/arm64/ShieldActionExtension-primary.d",
+    "diagnostics" : "/Users/huangjiawen/Documents/Codex/2026-06-21/build-ios-apps-plugin-build-ios-2/work/DerivedDataRelease/Build/Intermediates.noindex/FocusGuard.build/Release-iphoneos/ShieldActionExtension.build/Objects-normal/arm64/ShieldActionExtension-primary.dia",
+    "emit-module-dependencies" : "/Users/huangjiawen/Documents/Codex/2026-06-21/build-ios-apps-plugin-build-ios-2/work/DerivedDataRelease/Build/Intermediates.noindex/FocusGuard.build/Release-iphoneos/ShieldActionExtension.build/Objects-normal/arm64/ShieldActionExtension-primary-emit-module.d",
+    "emit-module-diagnostics" : "/Users/huangjiawen/Documents/Codex/2026-06-21/build-ios-apps-plugin-build-ios-2/work/DerivedDataRelease/Build/Intermediates.noindex/FocusGuard.build/Release-iphoneos/ShieldActionExtension.build/Objects-normal/arm64/ShieldActionExtension-primary-emit-module.dia",
+    "pch" : "/Users/huangjiawen/Documents/Codex/2026-06-21/build-ios-apps-plugin-build-ios-2/work/DerivedDataRelease/Build/Intermediates.noindex/FocusGuard.build/Release-iphoneos/ShieldActionExtension.build/Objects-normal/arm64/ShieldActionExtension-primary-Bridging-header.pch",
+    "swift-dependencies" : "/Users/huangjiawen/Documents/Codex/2026-06-21/build-ios-apps-plugin-build-ios-2/work/DerivedDataRelease/Build/Intermediates.noindex/FocusGuard.build/Release-iphoneos/ShieldActionExtension.build/Objects-normal/arm64/ShieldActionExtension-primary.swiftdeps"
+  },
+  "/Users/huangjiawen/Documents/Codex/2026-06-21/build-ios-apps-plugin-build-ios-2/ShieldActionExtension/ShieldActionExtension.swift" : {
+    "index-unit-output-path" : "/FocusGuard.build/Release-iphoneos/ShieldActionExtension.build/Objects-normal/arm64/ShieldActionExtension.o",
+    "llvm-bc" : "/Users/huangjiawen/Documents/Codex/2026-06-21/build-ios-apps-plugin-build-ios-2/work/DerivedDataRelease/Build/Intermediates.noindex/FocusGuard.build/Release-iphoneos/ShieldActionExtension.build/Objects-normal/arm64/ShieldActionExtension.bc",
+    "object" : "/Users/huangjiawen/Documents/Codex/2026-06-21/build-ios-apps-plugin-build-ios-2/work/DerivedDataRelease/Build/Intermediates.noindex/FocusGuard.build/Release-iphoneos/ShieldActionExtension.build/Objects-normal/arm64/ShieldActionExtension.o"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "" : {
+    "const-values" : "/Users/huangjiawen/Documents/Codex/2026-06-21/build-ios-apps-plugin-build-ios-2/work/DerivedData-v12/Build/Intermediates.noindex/FocusGuard.build/Release-iphoneos/FocusGuardWidget.build/Objects-normal/arm64/FocusGuardWidget-primary.swiftconstvalues",
+    "dependencies" : "/Users/huangjiawen/Documents/Codex/2026-06-21/build-ios-apps-plugin-build-ios-2/work/DerivedData-v12/Build/Intermediates.noindex/FocusGuard.build/Release-iphoneos/FocusGuardWidget.build/Objects-normal/arm64/FocusGuardWidget-primary.d",
+    "diagnostics" : "/Users/huangjiawen/Documents/Codex/2026-06-21/build-ios-apps-plugin-build-ios-2/work/DerivedData-v12/Build/Intermediates.noindex/FocusGuard.build/Release-iphoneos/FocusGuardWidget.build/Objects-normal/arm64/FocusGuardWidget-primary.dia",
+    "emit-module-dependencies" : "/Users/huangjiawen/Documents/Codex/2026-06-21/build-ios-apps-plugin-build-ios-2/work/DerivedData-v12/Build/Intermediates.noindex/FocusGuard.build/Release-iphoneos/FocusGuardWidget.build/Objects-normal/arm64/FocusGuardWidget-primary-emit-module.d",
+    "emit-module-diagnostics" : "/Users/huangjiawen/Documents/Codex/2026-06-21/build-ios-apps-plugin-build-ios-2/work/DerivedData-v12/Build/Intermediates.noindex/FocusGuard.build/Release-iphoneos/FocusGuardWidget.build/Objects-normal/arm64/FocusGuardWidget-primary-emit-module.dia",
+    "pch" : "/Users/huangjiawen/Documents/Codex/2026-06-21/build-ios-apps-plugin-build-ios-2/work/DerivedData-v12/Build/Intermediates.noindex/FocusGuard.build/Release-iphoneos/FocusGuardWidget.build/Objects-normal/arm64/FocusGuardWidget-primary-Bridging-header.pch",
+    "swift-dependencies" : "/Users/huangjiawen/Documents/Codex/2026-06-21/build-ios-apps-plugin-build-ios-2/work/DerivedData-v12/Build/Intermediates.noindex/FocusGuard.build/Release-iphoneos/FocusGuardWidget.build/Objects-normal/arm64/FocusGuardWidget-primary.swiftdeps"
+  },
+  "/Users/huangjiawen/Documents/Codex/2026-06-21/build-ios-apps-plugin-build-ios-2/ActivityShared/FocusActivityAttributes.swift" : {
+    "index-unit-output-path" : "/FocusGuard.build/Release-iphoneos/FocusGuardWidget.build/Objects-normal/arm64/FocusActivityAttributes.o",
+    "llvm-bc" : "/Users/huangjiawen/Documents/Codex/2026-06-21/build-ios-apps-plugin-build-ios-2/work/DerivedData-v12/Build/Intermediates.noindex/FocusGuard.build/Release-iphoneos/FocusGuardWidget.build/Objects-normal/arm64/FocusActivityAttributes.bc",
+    "object" : "/Users/huangjiawen/Documents/Codex/2026-06-21/build-ios-apps-plugin-build-ios-2/work/DerivedData-v12/Build/Intermediates.noindex/FocusGuard.build/Release-iphoneos/FocusGuardWidget.build/Objects-normal/arm64/FocusActivityAttributes.o"
+  },
+  "/Users/huangjiawen/Documents/Codex/2026-06-21/build-ios-apps-plugin-build-ios-2/FocusGuardWidget/FocusGuardWidget.swift" : {
+    "index-unit-output-path" : "/FocusGuard.build/Release-iphoneos/FocusGuardWidget.build/Objects-normal/arm64/FocusGuardWidget.o",
+    "llvm-bc" : "/Users/huangjiawen/Documents/Codex/2026-06-21/build-ios-apps-plugin-build-ios-2/work/DerivedData-v12/Build/Intermediates.noindex/FocusGuard.build/Release-iphoneos/FocusGuardWidget.build/Objects-normal/arm64/FocusGuardWidget.bc",
+    "object" : "/Users/huangjiawen/Documents/Codex/2026-06-21/build-ios-apps-plugin-build-ios-2/work/DerivedData-v12/Build/Intermediates.noindex/FocusGuard.build/Release-iphoneos/FocusGuardWidget.build/Objects-normal/arm64/FocusGuardWidget.o"
+  }
+}

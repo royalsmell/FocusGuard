@@ -1,0 +1,24 @@
+{
+  "source": "/Users/huangjiawen/Documents/Codex/2026-06-21/build-ios-apps-plugin-build-ios-2/ShieldActionExtension/ShieldActionExtension.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "尝试打开专注期间已屏蔽的内容。",
+        "location": {
+          "startingColumn": 43,
+          "startingLine": 41
+        }
+      },
+      {
+        "comment": "",
+        "key": "回到这次的专注目标。",
+        "location": {
+          "startingColumn": 45,
+          "startingLine": 42
+        }
+      }
+    ]
+  },
+  "version": 1
+}

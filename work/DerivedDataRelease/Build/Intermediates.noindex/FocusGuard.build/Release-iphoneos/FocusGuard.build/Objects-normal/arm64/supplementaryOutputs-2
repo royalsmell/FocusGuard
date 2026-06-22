@@ -1,0 +1,12 @@
+{
+  "/Users/huangjiawen/Documents/Codex/2026-06-21/build-ios-apps-plugin-build-ios-2/FocusGuardApp/Sources/Views/ActivityPickerSheet.swift" : {
+    "abi-baseline-json" : "/Users/huangjiawen/Documents/Codex/2026-06-21/build-ios-apps-plugin-build-ios-2/work/DerivedDataRelease/Build/Intermediates.noindex/FocusGuard.build/Release-iphoneos/FocusGuard.build/Objects-normal/arm64/FocusGuard.abi.json",
+    "const-values" : "/Users/huangjiawen/Documents/Codex/2026-06-21/build-ios-apps-plugin-build-ios-2/work/DerivedDataRelease/Build/Intermediates.noindex/FocusGuard.build/Release-iphoneos/FocusGuard.build/Objects-normal/arm64/FocusGuard-primary.swiftconstvalues",
+    "dependencies" : "/Users/huangjiawen/Documents/Codex/2026-06-21/build-ios-apps-plugin-build-ios-2/work/DerivedDataRelease/Build/Intermediates.noindex/FocusGuard.build/Release-iphoneos/FocusGuard.build/Objects-normal/arm64/FocusGuard-primary.d",
+    "diagnostics" : "/Users/huangjiawen/Documents/Codex/2026-06-21/build-ios-apps-plugin-build-ios-2/work/DerivedDataRelease/Build/Intermediates.noindex/FocusGuard.build/Release-iphoneos/FocusGuard.build/Objects-normal/arm64/FocusGuard-primary.dia",
+    "objc-header" : "/Users/huangjiawen/Documents/Codex/2026-06-21/build-ios-apps-plugin-build-ios-2/work/DerivedDataRelease/Build/Intermediates.noindex/FocusGuard.build/Release-iphoneos/FocusGuard.build/Objects-normal/arm64/FocusGuard-Swift.h",
+    "swiftdoc" : "/Users/huangjiawen/Documents/Codex/2026-06-21/build-ios-apps-plugin-build-ios-2/work/DerivedDataRelease/Build/Intermediates.noindex/FocusGuard.build/Release-iphoneos/FocusGuard.build/Objects-normal/arm64/FocusGuard.swiftdoc",
+    "swiftmodule" : "/Users/huangjiawen/Documents/Codex/2026-06-21/build-ios-apps-plugin-build-ios-2/work/DerivedDataRelease/Build/Intermediates.noindex/FocusGuard.build/Release-iphoneos/FocusGuard.build/Objects-normal/arm64/FocusGuard.swiftmodule",
+    "swiftsourceinfo" : "/Users/huangjiawen/Documents/Codex/2026-06-21/build-ios-apps-plugin-build-ios-2/work/DerivedDataRelease/Build/Intermediates.noindex/FocusGuard.build/Release-iphoneos/FocusGuard.build/Objects-normal/arm64/FocusGuard.swiftsourceinfo"
+  }
+}

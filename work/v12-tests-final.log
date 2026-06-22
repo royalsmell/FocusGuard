@@ -1,0 +1,102 @@
+[0/1] Planning build
+Building for debugging...
+[0/5] Write sources
+[1/5] Write swift-version--58304C5D6DBC2206.txt
+[3/8] Emitting module SharedCore
+[4/8] Compiling SharedCore BackupModels.swift
+[5/8] Compiling SharedCore FocusAnalytics.swift
+[5/10] Write Objects.LinkFileList
+[7/10] Linking CoreChecks
+[8/10] Linking FocusGuardCorePackageTests
+[9/10] Applying CoreChecks
+Build complete! (5.91s)
+Test Suite 'All tests' started at 2026-06-22 00:05:59.031.
+Test Suite 'FocusGuardCorePackageTests.xctest' started at 2026-06-22 00:05:59.037.
+Test Suite 'BackupAndAnalyticsTests' started at 2026-06-22 00:05:59.037.
+Test Case '-[SharedCoreTests.BackupAndAnalyticsTests testAnalysisPreferencesAllowOnlyFourIntervalsAndOldContextDefaultsToTwelve]' started.
+Test Case '-[SharedCoreTests.BackupAndAnalyticsTests testAnalysisPreferencesAllowOnlyFourIntervalsAndOldContextDefaultsToTwelve]' passed (0.004 seconds).
+Test Case '-[SharedCoreTests.BackupAndAnalyticsTests testAnalyticsUsesMondayWeekAndExcludesActiveSessions]' started.
+Test Case '-[SharedCoreTests.BackupAndAnalyticsTests testAnalyticsUsesMondayWeekAndExcludesActiveSessions]' passed (0.010 seconds).
+Test Case '-[SharedCoreTests.BackupAndAnalyticsTests testArchiveRejectsCorruptionAndUnsupportedSchema]' started.
+Test Case '-[SharedCoreTests.BackupAndAnalyticsTests testArchiveRejectsCorruptionAndUnsupportedSchema]' passed (0.006 seconds).
+Test Case '-[SharedCoreTests.BackupAndAnalyticsTests testArchiveRoundTripIncludesAPIKeyAndThumbnail]' started.
+Test Case '-[SharedCoreTests.BackupAndAnalyticsTests testArchiveRoundTripIncludesAPIKeyAndThumbnail]' passed (0.003 seconds).
+Test Case '-[SharedCoreTests.BackupAndAnalyticsTests testMergeUsesNewerMetadataAndUnionsEventsWithoutDeletingLocal]' started.
+Test Case '-[SharedCoreTests.BackupAndAnalyticsTests testMergeUsesNewerMetadataAndUnionsEventsWithoutDeletingLocal]' passed (0.003 seconds).
+Test Case '-[SharedCoreTests.BackupAndAnalyticsTests testRewriteJSONDecodesStrictResult]' started.
+Test Case '-[SharedCoreTests.BackupAndAnalyticsTests testRewriteJSONDecodesStrictResult]' passed (0.095 seconds).
+Test Suite 'BackupAndAnalyticsTests' passed at 2026-06-22 00:05:59.160.
+	 Executed 6 tests, with 0 failures (0 unexpected) in 0.121 (0.123) seconds
+Test Suite 'DHash64Tests' started at 2026-06-22 00:05:59.160.
+Test Case '-[SharedCoreTests.DHash64Tests testDHashRejectsUnexpectedPixelCount]' started.
+Test Case '-[SharedCoreTests.DHash64Tests testDHashRejectsUnexpectedPixelCount]' passed (0.000 seconds).
+Test Case '-[SharedCoreTests.DHash64Tests testDHashUsesHorizontalDifferences]' started.
+Test Case '-[SharedCoreTests.DHash64Tests testDHashUsesHorizontalDifferences]' passed (0.000 seconds).
+Test Suite 'DHash64Tests' passed at 2026-06-22 00:05:59.161.
+	 Executed 2 tests, with 0 failures (0 unexpected) in 0.001 (0.001) seconds
+Test Suite 'InterventionEngineTests' started at 2026-06-22 00:05:59.161.
+Test Case '-[SharedCoreTests.InterventionEngineTests testDistractedCooldownAllowsANewAlertAfterSixtySeconds]' started.
+Test Case '-[SharedCoreTests.InterventionEngineTests testDistractedCooldownAllowsANewAlertAfterSixtySeconds]' passed (0.000 seconds).
+Test Case '-[SharedCoreTests.InterventionEngineTests testDistractedRequiresTwoConfidentFrames]' started.
+Test Case '-[SharedCoreTests.InterventionEngineTests testDistractedRequiresTwoConfidentFrames]' passed (0.000 seconds).
+Test Case '-[SharedCoreTests.InterventionEngineTests testLowConfidenceNeverAlerts]' started.
+Test Case '-[SharedCoreTests.InterventionEngineTests testLowConfidenceNeverAlerts]' passed (0.000 seconds).
+Test Case '-[SharedCoreTests.InterventionEngineTests testUnknownResultBreaksDistractedStreak]' started.
+Test Case '-[SharedCoreTests.InterventionEngineTests testUnknownResultBreaksDistractedStreak]' passed (0.000 seconds).
+Test Case '-[SharedCoreTests.InterventionEngineTests testWanderingRequiresThreeFrames]' started.
+Test Case '-[SharedCoreTests.InterventionEngineTests testWanderingRequiresThreeFrames]' passed (0.000 seconds).
+Test Suite 'InterventionEngineTests' passed at 2026-06-22 00:05:59.162.
+	 Executed 5 tests, with 0 failures (0 unexpected) in 0.001 (0.001) seconds
+Test Suite 'ProviderAndJSONTests' started at 2026-06-22 00:05:59.162.
+Test Case '-[SharedCoreTests.ProviderAndJSONTests testJSONFenceIsRemoved]' started.
+Test Case '-[SharedCoreTests.ProviderAndJSONTests testJSONFenceIsRemoved]' passed (0.000 seconds).
+Test Case '-[SharedCoreTests.ProviderAndJSONTests testJudgmentRejectsUnknownLevelAndMalformedJSON]' started.
+Test Case '-[SharedCoreTests.ProviderAndJSONTests testJudgmentRejectsUnknownLevelAndMalformedJSON]' passed (0.002 seconds).
+Test Case '-[SharedCoreTests.ProviderAndJSONTests testKeychainAccessGroupUsesActualSigningPrefix]' started.
+Test Case '-[SharedCoreTests.ProviderAndJSONTests testKeychainAccessGroupUsesActualSigningPrefix]' passed (0.000 seconds).
+Test Case '-[SharedCoreTests.ProviderAndJSONTests testProviderBuildsChatCompletionsURL]' started.
+Test Case '-[SharedCoreTests.ProviderAndJSONTests testProviderBuildsChatCompletionsURL]' passed (0.003 seconds).
+Test Case '-[SharedCoreTests.ProviderAndJSONTests testProviderRequiresHTTPSExceptOnLocalNetwork]' started.
+Test Case '-[SharedCoreTests.ProviderAndJSONTests testProviderRequiresHTTPSExceptOnLocalNetwork]' passed (0.001 seconds).
+Test Suite 'ProviderAndJSONTests' passed at 2026-06-22 00:05:59.169.
+	 Executed 5 tests, with 0 failures (0 unexpected) in 0.006 (0.006) seconds
+Test Suite 'SessionMetricsTests' started at 2026-06-22 00:05:59.169.
+Test Case '-[SharedCoreTests.SessionMetricsTests testBroadcastLifecycleFinishesExpiredOrClearedSession]' started.
+Test Case '-[SharedCoreTests.SessionMetricsTests testBroadcastLifecycleFinishesExpiredOrClearedSession]' passed (0.000 seconds).
+Test Case '-[SharedCoreTests.SessionMetricsTests testBroadcastStopCapsLastObservedInterval]' started.
+Test Case '-[SharedCoreTests.SessionMetricsTests testBroadcastStopCapsLastObservedInterval]' passed (0.000 seconds).
+Test Case '-[SharedCoreTests.SessionMetricsTests testLegacySessionModesMigrateToBroadcastAI]' started.
+Test Case '-[SharedCoreTests.SessionMetricsTests testLegacySessionModesMigrateToBroadcastAI]' passed (0.000 seconds).
+Test Case '-[SharedCoreTests.SessionMetricsTests testLegacyShieldEventMigratesToSystem]' started.
+Test Case '-[SharedCoreTests.SessionMetricsTests testLegacyShieldEventMigratesToSystem]' passed (0.000 seconds).
+Test Case '-[SharedCoreTests.SessionMetricsTests testMetricsKeepUnobservedTimeSeparate]' started.
+Test Case '-[SharedCoreTests.SessionMetricsTests testMetricsKeepUnobservedTimeSeparate]' passed (0.000 seconds).
+Test Case '-[SharedCoreTests.SessionMetricsTests testNonVisionEventsDoNotBecomeObservedTime]' started.
+Test Case '-[SharedCoreTests.SessionMetricsTests testNonVisionEventsDoNotBecomeObservedTime]' passed (0.000 seconds).
+Test Suite 'SessionMetricsTests' passed at 2026-06-22 00:05:59.170.
+	 Executed 6 tests, with 0 failures (0 unexpected) in 0.001 (0.002) seconds
+Test Suite 'SharedStoresTests' started at 2026-06-22 00:05:59.170.
+Test Case '-[SharedCoreTests.SharedStoresTests testDurationPreferencesValidateAndRoundTrip]' started.
+Test Case '-[SharedCoreTests.SharedStoresTests testDurationPreferencesValidateAndRoundTrip]' passed (0.002 seconds).
+Test Case '-[SharedCoreTests.SharedStoresTests testEventStoreWritesAndDrainsOnlyRequestedSession]' started.
+Test Case '-[SharedCoreTests.SharedStoresTests testEventStoreWritesAndDrainsOnlyRequestedSession]' passed (0.026 seconds).
+Test Case '-[SharedCoreTests.SharedStoresTests testFocusDurationConvertsHoursAndMinutes]' started.
+Test Case '-[SharedCoreTests.SharedStoresTests testFocusDurationConvertsHoursAndMinutes]' passed (0.008 seconds).
+Test Case '-[SharedCoreTests.SharedStoresTests testReminderPreferencesRoundTrip]' started.
+Test Case '-[SharedCoreTests.SharedStoresTests testReminderPreferencesRoundTrip]' passed (0.089 seconds).
+Test Case '-[SharedCoreTests.SharedStoresTests testRetentionRemovesOnlyExpiredFiles]' started.
+Test Case '-[SharedCoreTests.SharedStoresTests testRetentionRemovesOnlyExpiredFiles]' passed (0.013 seconds).
+Test Case '-[SharedCoreTests.SharedStoresTests testSessionRepositoryRoundTripsActiveAndHistory]' started.
+Test Case '-[SharedCoreTests.SharedStoresTests testSessionRepositoryRoundTripsActiveAndHistory]' passed (0.002 seconds).
+Test Case '-[SharedCoreTests.SharedStoresTests testSingleSessionDeletionPreservesOtherHistoryAndRemovesAssets]' started.
+Test Case '-[SharedCoreTests.SharedStoresTests testSingleSessionDeletionPreservesOtherHistoryAndRemovesAssets]' passed (0.006 seconds).
+Test Suite 'SharedStoresTests' passed at 2026-06-22 00:05:59.321.
+	 Executed 7 tests, with 0 failures (0 unexpected) in 0.146 (0.150) seconds
+Test Suite 'FocusGuardCorePackageTests.xctest' passed at 2026-06-22 00:05:59.321.
+	 Executed 31 tests, with 0 failures (0 unexpected) in 0.276 (0.283) seconds
+Test Suite 'All tests' passed at 2026-06-22 00:05:59.321.
+	 Executed 31 tests, with 0 failures (0 unexpected) in 0.276 (0.290) seconds
+◇ Test run started.
+↳ Testing Library Version: 1902
+↳ Target Platform: arm64e-apple-macos14.0
+✔ Test run with 0 tests in 0 suites passed after 0.002 seconds.

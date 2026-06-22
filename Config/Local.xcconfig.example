@@ -1,0 +1,3 @@
+// Copy this file to Local.xcconfig and enter your Apple Developer Team ID.
+FOCUSGUARD_DEVELOPMENT_TEAM = ABCDE12345
+

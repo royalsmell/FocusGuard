@@ -1,0 +1,176 @@
+{
+  "source": "/Users/huangjiawen/Documents/Codex/2026-06-21/build-ios-apps-plugin-build-ios-2/FocusGuardApp/Sources/Views/HomeView.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "专注守望",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 24
+        }
+      },
+      {
+        "comment": "",
+        "key": "这次要完成什么？",
+        "location": {
+          "startingColumn": 23,
+          "startingLine": 35
+        }
+      },
+      {
+        "comment": "",
+        "key": "例如：完成产品需求文档第一稿",
+        "location": {
+          "startingColumn": 27,
+          "startingLine": 37
+        }
+      },
+      {
+        "comment": "",
+        "key": "专注时长",
+        "location": {
+          "startingColumn": 23,
+          "startingLine": 45
+        }
+      },
+      {
+        "comment": "",
+        "key": "%lld",
+        "location": {
+          "startingColumn": 32,
+          "startingLine": 49
+        }
+      },
+      {
+        "comment": "",
+        "key": "分心内容屏蔽",
+        "location": {
+          "startingColumn": 27,
+          "startingLine": 61
+        }
+      },
+      {
+        "comment": "",
+        "key": "未选择",
+        "location": {
+          "startingColumn": 47,
+          "startingLine": 114
+        }
+      },
+      {
+        "comment": "",
+        "key": "已选 %lld 项",
+        "location": {
+          "startingColumn": 80,
+          "startingLine": 114
+        }
+      },
+      {
+        "comment": "",
+        "key": "开始后请通过系统按钮主动开启屏幕广播。",
+        "location": {
+          "startingColumn": 24,
+          "startingLine": 79
+        }
+      },
+      {
+        "comment": "",
+        "key": "仅使用 Screen Time 屏蔽，不分析屏幕内容。",
+        "location": {
+          "startingColumn": 24,
+          "startingLine": 80
+        }
+      },
+      {
+        "comment": "",
+        "key": "配置 AI Provider",
+        "location": {
+          "startingColumn": 28,
+          "startingLine": 84
+        }
+      },
+      {
+        "comment": "",
+        "key": "AI 屏幕守望",
+        "location": {
+          "startingColumn": 27,
+          "startingLine": 75
+        }
+      },
+      {
+        "comment": "",
+        "key": "开始 %lld 分钟",
+        "location": {
+          "startingColumn": 23,
+          "startingLine": 99
+        }
+      },
+      {
+        "comment": "",
+        "key": "Screen Time 屏蔽中",
+        "location": {
+          "startingColumn": 23,
+          "startingLine": 146
+        }
+      },
+      {
+        "comment": "",
+        "key": "提前结束",
+        "location": {
+          "startingColumn": 20,
+          "startingLine": 154
+        }
+      },
+      {
+        "comment": "",
+        "key": "点按上方系统按钮开启屏幕广播",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 140
+        }
+      },
+      {
+        "comment": "",
+        "key": "开启或停止 AI 屏幕广播",
+        "location": {
+          "startingColumn": 45,
+          "startingLine": 139
+        }
+      },
+      {
+        "comment": "",
+        "key": "广播已停止 · Screen Time 继续",
+        "location": {
+          "startingColumn": 39,
+          "startingLine": 186
+        }
+      },
+      {
+        "comment": "",
+        "key": "AI 正在观测",
+        "location": {
+          "startingColumn": 39,
+          "startingLine": 190
+        }
+      },
+      {
+        "comment": "",
+        "key": "广播已连接 · 等待下一帧",
+        "location": {
+          "startingColumn": 39,
+          "startingLine": 193
+        }
+      },
+      {
+        "comment": "",
+        "key": "等待开启屏幕广播",
+        "location": {
+          "startingColumn": 35,
+          "startingLine": 195
+        }
+      }
+    ]
+  },
+  "version": 1
+}

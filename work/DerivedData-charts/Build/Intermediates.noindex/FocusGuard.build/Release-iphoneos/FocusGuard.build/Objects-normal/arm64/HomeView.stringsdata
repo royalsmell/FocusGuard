@@ -1,0 +1,168 @@
+{
+  "source": "/Users/huangjiawen/Documents/Codex/2026-06-21/build-ios-apps-plugin-build-ios-2/FocusGuardApp/Sources/Views/HomeView.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "专注守望",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 24
+        }
+      },
+      {
+        "comment": "",
+        "key": "这次要完成什么？",
+        "location": {
+          "startingColumn": 23,
+          "startingLine": 43
+        }
+      },
+      {
+        "comment": "",
+        "key": "例如：完成产品需求文档第一稿",
+        "location": {
+          "startingColumn": 27,
+          "startingLine": 45
+        }
+      },
+      {
+        "comment": "",
+        "key": "AI 改写",
+        "location": {
+          "startingColumn": 31,
+          "startingLine": 59
+        }
+      },
+      {
+        "comment": "",
+        "key": "专注时长",
+        "location": {
+          "startingColumn": 23,
+          "startingLine": 68
+        }
+      },
+      {
+        "comment": "",
+        "key": "开始 %@",
+        "location": {
+          "startingColumn": 23,
+          "startingLine": 97
+        }
+      },
+      {
+        "comment": "",
+        "key": "确认任务改写",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 142
+        }
+      },
+      {
+        "comment": "",
+        "key": "原目标",
+        "location": {
+          "startingColumn": 25,
+          "startingLine": 138
+        }
+      },
+      {
+        "comment": "",
+        "key": "AI 改写",
+        "location": {
+          "startingColumn": 25,
+          "startingLine": 139
+        }
+      },
+      {
+        "comment": "",
+        "key": "改写理由",
+        "location": {
+          "startingColumn": 25,
+          "startingLine": 140
+        }
+      },
+      {
+        "comment": "",
+        "key": "取消",
+        "location": {
+          "startingColumn": 70,
+          "startingLine": 144
+        }
+      },
+      {
+        "comment": "",
+        "key": "使用改写",
+        "location": {
+          "startingColumn": 70,
+          "startingLine": 145
+        }
+      },
+      {
+        "comment": "",
+        "key": "提前结束",
+        "location": {
+          "startingColumn": 20,
+          "startingLine": 189
+        }
+      },
+      {
+        "comment": "",
+        "key": "点按上方系统按钮开启屏幕广播",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 175
+        }
+      },
+      {
+        "comment": "",
+        "key": "开启或停止 AI 屏幕广播",
+        "location": {
+          "startingColumn": 41,
+          "startingLine": 174
+        }
+      },
+      {
+        "comment": "",
+        "key": "打开屏幕共享引导",
+        "location": {
+          "startingColumn": 24,
+          "startingLine": 178
+        }
+      },
+      {
+        "comment": "",
+        "key": "广播已停止",
+        "location": {
+          "startingColumn": 39,
+          "startingLine": 220
+        }
+      },
+      {
+        "comment": "",
+        "key": "AI 正在观测",
+        "location": {
+          "startingColumn": 39,
+          "startingLine": 224
+        }
+      },
+      {
+        "comment": "",
+        "key": "广播已连接 · 等待下一帧",
+        "location": {
+          "startingColumn": 39,
+          "startingLine": 227
+        }
+      },
+      {
+        "comment": "",
+        "key": "等待开启屏幕广播",
+        "location": {
+          "startingColumn": 35,
+          "startingLine": 229
+        }
+      }
+    ]
+  },
+  "version": 1
+}

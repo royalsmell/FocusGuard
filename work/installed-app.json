@@ -1,0 +1,46 @@
+{
+  "info" : {
+    "arguments" : [
+      "devicectl",
+      "device",
+      "info",
+      "apps",
+      "--device",
+      "62437454-20D1-5CE1-B023-8DA222940DCC",
+      "--bundle-id",
+      "com.huangjiawen.focusguard",
+      "--json-output",
+      "work/installed-app.json"
+    ],
+    "commandType" : "devicectl.device.info.apps",
+    "environment" : {
+      "TERM" : "dumb"
+    },
+    "jsonVersion" : 3,
+    "outcome" : "success",
+    "version" : "518.31"
+  },
+  "result" : {
+    "apps" : [
+      {
+        "appClip" : false,
+        "builtByDeveloper" : true,
+        "bundleIdentifier" : "com.huangjiawen.focusguard",
+        "bundleVersion" : "1",
+        "defaultApp" : false,
+        "hidden" : false,
+        "internalApp" : false,
+        "name" : "专注守望",
+        "removable" : true,
+        "url" : "file:///private/var/containers/Bundle/Application/482A169E-24DE-4F7A-A94F-48A84D8EB542/FocusGuard.app/",
+        "version" : "1.0.0"
+      }
+    ],
+    "defaultAppsIncluded" : false,
+    "deviceIdentifier" : "62437454-20D1-5CE1-B023-8DA222940DCC",
+    "hiddenAppsIncluded" : false,
+    "internalAppsIncluded" : false,
+    "matchingBundleIdentifier" : "com.huangjiawen.focusguard",
+    "removableAppsIncluded" : true
+  }
+}

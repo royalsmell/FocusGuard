@@ -1,0 +1,88 @@
+{
+  "source": "/Users/huangjiawen/Documents/Codex/2026-06-21/build-ios-apps-plugin-build-ios-2/BroadcastUploadExtension/SampleHandler.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "AI 屏幕广播已开始。",
+        "location": {
+          "startingColumn": 47,
+          "startingLine": 32
+        }
+      },
+      {
+        "comment": "",
+        "key": "AI 屏幕广播已暂停。",
+        "location": {
+          "startingColumn": 65,
+          "startingLine": 40
+        }
+      },
+      {
+        "comment": "",
+        "key": "AI 屏幕广播已恢复。",
+        "location": {
+          "startingColumn": 66,
+          "startingLine": 44
+        }
+      },
+      {
+        "comment": "",
+        "key": "AI 屏幕广播已停止，会话继续使用 Screen Time 模式。",
+        "location": {
+          "startingColumn": 66,
+          "startingLine": 48
+        }
+      },
+      {
+        "comment": "",
+        "key": "AI 守望已停止",
+        "location": {
+          "startingColumn": 38,
+          "startingLine": 51
+        }
+      },
+      {
+        "comment": "",
+        "key": "应用屏蔽仍会持续到专注结束；这段时间会记为未观测。",
+        "location": {
+          "startingColumn": 37,
+          "startingLine": 52
+        }
+      },
+      {
+        "comment": "",
+        "key": "未配置可用的 AI 密钥。",
+        "location": {
+          "startingColumn": 97,
+          "startingLine": 113
+        }
+      },
+      {
+        "comment": "",
+        "key": "AI 分析暂时不可用。",
+        "location": {
+          "startingColumn": 97,
+          "startingLine": 160
+        }
+      },
+      {
+        "comment": "",
+        "key": "轻轻回到目标",
+        "location": {
+          "startingColumn": 45,
+          "startingLine": 224
+        }
+      },
+      {
+        "comment": "",
+        "key": "专注守望提醒",
+        "location": {
+          "startingColumn": 45,
+          "startingLine": 227
+        }
+      }
+    ]
+  },
+  "version": 1
+}

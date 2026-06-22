@@ -1,0 +1,224 @@
+{
+  "source": "/Users/huangjiawen/Documents/Codex/2026-06-21/build-ios-apps-plugin-build-ios-2/FocusGuardApp/Sources/Views/SettingsView.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "设置",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 81
+        }
+      },
+      {
+        "comment": "",
+        "key": "确定删除全部历史吗？",
+        "location": {
+          "startingColumn": 29,
+          "startingLine": 82
+        }
+      },
+      {
+        "comment": "",
+        "key": "AI Provider",
+        "location": {
+          "startingColumn": 21,
+          "startingLine": 12
+        }
+      },
+      {
+        "comment": "",
+        "key": "隐私与数据",
+        "location": {
+          "startingColumn": 21,
+          "startingLine": 65
+        }
+      },
+      {
+        "comment": "",
+        "key": "关于",
+        "location": {
+          "startingColumn": 21,
+          "startingLine": 74
+        }
+      },
+      {
+        "comment": "",
+        "key": "已配置",
+        "location": {
+          "startingColumn": 62,
+          "startingLine": 19
+        }
+      },
+      {
+        "comment": "",
+        "key": "需要密钥",
+        "location": {
+          "startingColumn": 76,
+          "startingLine": 19
+        }
+      },
+      {
+        "comment": "",
+        "key": "重新请求 Screen Time 授权",
+        "location": {
+          "startingColumn": 24,
+          "startingLine": 35
+        }
+      },
+      {
+        "comment": "",
+        "key": "Screen Time",
+        "location": {
+          "startingColumn": 27,
+          "startingLine": 30
+        }
+      },
+      {
+        "comment": "",
+        "key": "已授权",
+        "location": {
+          "startingColumn": 69,
+          "startingLine": 91
+        }
+      },
+      {
+        "comment": "",
+        "key": "已拒绝",
+        "location": {
+          "startingColumn": 87,
+          "startingLine": 92
+        }
+      },
+      {
+        "comment": "",
+        "key": "未请求",
+        "location": {
+          "startingColumn": 94,
+          "startingLine": 93
+        }
+      },
+      {
+        "comment": "",
+        "key": "未知",
+        "location": {
+          "startingColumn": 34,
+          "startingLine": 94
+        }
+      },
+      {
+        "comment": "",
+        "key": "权限",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 39
+        }
+      },
+      {
+        "comment": "",
+        "key": "系统不会向本 App 暴露你选择的应用名称，只提供不可读的授权令牌。",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 41
+        }
+      },
+      {
+        "comment": "",
+        "key": "走神时静默提醒",
+        "location": {
+          "startingColumn": 24,
+          "startingLine": 45
+        }
+      },
+      {
+        "comment": "",
+        "key": "分心时有声提醒",
+        "location": {
+          "startingColumn": 24,
+          "startingLine": 52
+        }
+      },
+      {
+        "comment": "",
+        "key": "提醒",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 60
+        }
+      },
+      {
+        "comment": "",
+        "key": "连续三次走神触发静默提醒；连续两次分心触发有声提醒。网络失败、未知或低置信度不会提醒。",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 62
+        }
+      },
+      {
+        "comment": "",
+        "key": "原始屏幕帧不会写入磁盘",
+        "location": {
+          "startingColumn": 23,
+          "startingLine": 66
+        }
+      },
+      {
+        "comment": "",
+        "key": "仅保留确认分心的 320px 缩略图",
+        "location": {
+          "startingColumn": 23,
+          "startingLine": 67
+        }
+      },
+      {
+        "comment": "",
+        "key": "缩略图 30 天后自动清理",
+        "location": {
+          "startingColumn": 23,
+          "startingLine": 68
+        }
+      },
+      {
+        "comment": "",
+        "key": "删除全部历史和缩略图",
+        "location": {
+          "startingColumn": 24,
+          "startingLine": 69
+        }
+      },
+      {
+        "comment": "",
+        "key": "专注守望是独立实现的个人专注工具，不包含 Vigil 的源码或素材。",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 76
+        }
+      },
+      {
+        "comment": "",
+        "key": "版本",
+        "location": {
+          "startingColumn": 32,
+          "startingLine": 75
+        }
+      },
+      {
+        "comment": "",
+        "key": "删除全部数据",
+        "location": {
+          "startingColumn": 20,
+          "startingLine": 83
+        }
+      },
+      {
+        "comment": "",
+        "key": "取消",
+        "location": {
+          "startingColumn": 20,
+          "startingLine": 86
+        }
+      }
+    ]
+  },
+  "version": 1
+}

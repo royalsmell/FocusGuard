@@ -1,0 +1,16 @@
+{
+  "source": "/Users/huangjiawen/Documents/Codex/2026-06-21/build-ios-apps-plugin-build-ios-2/FocusGuardApp/Sources/Services/BackupCoordinator.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "导入预览已失效",
+        "location": {
+          "startingColumn": 71,
+          "startingLine": 114
+        }
+      }
+    ]
+  },
+  "version": 1
+}

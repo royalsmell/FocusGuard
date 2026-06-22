@@ -1,0 +1,32 @@
+{
+  "source": "/Users/huangjiawen/Documents/Codex/2026-06-21/build-ios-apps-plugin-build-ios-2/SharedCore/Sources/VisionAnalysisService.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "AI 服务返回了无法识别的响应。",
+        "location": {
+          "startingColumn": 50,
+          "startingLine": 36
+        }
+      },
+      {
+        "comment": "",
+        "key": "AI 服务错误（%lld）：%@",
+        "location": {
+          "startingColumn": 66,
+          "startingLine": 37
+        }
+      },
+      {
+        "comment": "",
+        "key": "AI 返回格式不正确：%@",
+        "location": {
+          "startingColumn": 56,
+          "startingLine": 38
+        }
+      }
+    ]
+  },
+  "version": 1
+}

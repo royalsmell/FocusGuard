@@ -1,0 +1,21 @@
+{
+  "" : {
+    "const-values" : "/Users/huangjiawen/Documents/Codex/2026-06-21/build-ios-apps-plugin-build-ios-2/work/DerivedDataRelease/Build/Intermediates.noindex/FocusGuard.build/Release-iphoneos/DeviceActivityMonitorExtension.build/Objects-normal/arm64/DeviceActivityMonitorExtension-primary.swiftconstvalues",
+    "dependencies" : "/Users/huangjiawen/Documents/Codex/2026-06-21/build-ios-apps-plugin-build-ios-2/work/DerivedDataRelease/Build/Intermediates.noindex/FocusGuard.build/Release-iphoneos/DeviceActivityMonitorExtension.build/Objects-normal/arm64/DeviceActivityMonitorExtension-primary.d",
+    "diagnostics" : "/Users/huangjiawen/Documents/Codex/2026-06-21/build-ios-apps-plugin-build-ios-2/work/DerivedDataRelease/Build/Intermediates.noindex/FocusGuard.build/Release-iphoneos/DeviceActivityMonitorExtension.build/Objects-normal/arm64/DeviceActivityMonitorExtension-primary.dia",
+    "emit-module-dependencies" : "/Users/huangjiawen/Documents/Codex/2026-06-21/build-ios-apps-plugin-build-ios-2/work/DerivedDataRelease/Build/Intermediates.noindex/FocusGuard.build/Release-iphoneos/DeviceActivityMonitorExtension.build/Objects-normal/arm64/DeviceActivityMonitorExtension-primary-emit-module.d",
+    "emit-module-diagnostics" : "/Users/huangjiawen/Documents/Codex/2026-06-21/build-ios-apps-plugin-build-ios-2/work/DerivedDataRelease/Build/Intermediates.noindex/FocusGuard.build/Release-iphoneos/DeviceActivityMonitorExtension.build/Objects-normal/arm64/DeviceActivityMonitorExtension-primary-emit-module.dia",
+    "pch" : "/Users/huangjiawen/Documents/Codex/2026-06-21/build-ios-apps-plugin-build-ios-2/work/DerivedDataRelease/Build/Intermediates.noindex/FocusGuard.build/Release-iphoneos/DeviceActivityMonitorExtension.build/Objects-normal/arm64/DeviceActivityMonitorExtension-primary-Bridging-header.pch",
+    "swift-dependencies" : "/Users/huangjiawen/Documents/Codex/2026-06-21/build-ios-apps-plugin-build-ios-2/work/DerivedDataRelease/Build/Intermediates.noindex/FocusGuard.build/Release-iphoneos/DeviceActivityMonitorExtension.build/Objects-normal/arm64/DeviceActivityMonitorExtension-primary.swiftdeps"
+  },
+  "/Users/huangjiawen/Documents/Codex/2026-06-21/build-ios-apps-plugin-build-ios-2/DeviceActivityMonitorExtension/DeviceActivityMonitorExtension.swift" : {
+    "index-unit-output-path" : "/FocusGuard.build/Release-iphoneos/DeviceActivityMonitorExtension.build/Objects-normal/arm64/DeviceActivityMonitorExtension.o",
+    "llvm-bc" : "/Users/huangjiawen/Documents/Codex/2026-06-21/build-ios-apps-plugin-build-ios-2/work/DerivedDataRelease/Build/Intermediates.noindex/FocusGuard.build/Release-iphoneos/DeviceActivityMonitorExtension.build/Objects-normal/arm64/DeviceActivityMonitorExtension.bc",
+    "object" : "/Users/huangjiawen/Documents/Codex/2026-06-21/build-ios-apps-plugin-build-ios-2/work/DerivedDataRelease/Build/Intermediates.noindex/FocusGuard.build/Release-iphoneos/DeviceActivityMonitorExtension.build/Objects-normal/arm64/DeviceActivityMonitorExtension.o"
+  },
+  "/Users/huangjiawen/Documents/Codex/2026-06-21/build-ios-apps-plugin-build-ios-2/ScreenTimeShared/ScreenTimeSharedStore.swift" : {
+    "index-unit-output-path" : "/FocusGuard.build/Release-iphoneos/DeviceActivityMonitorExtension.build/Objects-normal/arm64/ScreenTimeSharedStore.o",
+    "llvm-bc" : "/Users/huangjiawen/Documents/Codex/2026-06-21/build-ios-apps-plugin-build-ios-2/work/DerivedDataRelease/Build/Intermediates.noindex/FocusGuard.build/Release-iphoneos/DeviceActivityMonitorExtension.build/Objects-normal/arm64/ScreenTimeSharedStore.bc",
+    "object" : "/Users/huangjiawen/Documents/Codex/2026-06-21/build-ios-apps-plugin-build-ios-2/work/DerivedDataRelease/Build/Intermediates.noindex/FocusGuard.build/Release-iphoneos/DeviceActivityMonitorExtension.build/Objects-normal/arm64/ScreenTimeSharedStore.o"
+  }
+}

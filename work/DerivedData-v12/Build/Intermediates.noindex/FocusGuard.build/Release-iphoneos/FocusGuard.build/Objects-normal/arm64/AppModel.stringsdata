@@ -1,0 +1,72 @@
+{
+  "source": "/Users/huangjiawen/Documents/Codex/2026-06-21/build-ios-apps-plugin-build-ios-2/FocusGuardApp/Sources/App/AppModel.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "请先写下这次要完成的目标。",
+        "location": {
+          "startingColumn": 44,
+          "startingLine": 14
+        }
+      },
+      {
+        "comment": "",
+        "key": "专注时长必须在 1 分钟到 23 小时 59 分钟之间。",
+        "location": {
+          "startingColumn": 50,
+          "startingLine": 15
+        }
+      },
+      {
+        "comment": "",
+        "key": "已有一场专注正在进行。",
+        "location": {
+          "startingColumn": 55,
+          "startingLine": 16
+        }
+      },
+      {
+        "comment": "",
+        "key": "开始专注前，请先在设置中保存 AI Provider 和 API Key。",
+        "location": {
+          "startingColumn": 50,
+          "startingLine": 17
+        }
+      },
+      {
+        "comment": "",
+        "key": "请先结束当前专注，再导入或导出数据。",
+        "location": {
+          "startingColumn": 61,
+          "startingLine": 18
+        }
+      },
+      {
+        "comment": "",
+        "key": "请先结束当前专注，再删除历史。",
+        "location": {
+          "startingColumn": 46,
+          "startingLine": 208
+        }
+      },
+      {
+        "comment": "",
+        "key": "进行中的专注不能删除。",
+        "location": {
+          "startingColumn": 46,
+          "startingLine": 227
+        }
+      },
+      {
+        "comment": "",
+        "key": "本次记录覆盖了 %lld%% 的会话时间。专注 %lld 分钟，走神 %lld 分钟，分心 %lld 分钟。未观测部分不会计入专注时间。",
+        "location": {
+          "startingColumn": 34,
+          "startingLine": 389
+        }
+      }
+    ]
+  },
+  "version": 1
+}

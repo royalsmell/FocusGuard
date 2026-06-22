@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>logFormatVersion</key>
+	<integer>12</integer>
+	<key>logs</key>
+	<dict>
+		<key>39D25A9B-81A5-4AD8-8C8D-F3AED00315BE</key>
+		<dict>
+			<key>className</key>
+			<string>IDECommandLineBuildLog</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>39D25A9B-81A5-4AD8-8C8D-F3AED00315BE.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+				<key>totalNumberOfAnalyzerIssues</key>
+				<integer>0</integer>
+				<key>totalNumberOfErrors</key>
+				<integer>0</integer>
+				<key>totalNumberOfTestFailures</key>
+				<integer>0</integer>
+				<key>totalNumberOfWarnings</key>
+				<integer>0</integer>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>FocusGuard project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>FocusGuard</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Building project FocusGuard with scheme FocusGuard and configuration Release</string>
+			<key>timeStartedRecording</key>
+			<real>803785769.36529303</real>
+			<key>timeStoppedRecording</key>
+			<real>803785780.18058395</real>
+			<key>title</key>
+			<string>Building project FocusGuard with scheme FocusGuard and configuration Release</string>
+			<key>uniqueIdentifier</key>
+			<string>39D25A9B-81A5-4AD8-8C8D-F3AED00315BE</string>
+		</dict>
+		<key>4C9BCE98-8578-497D-BE38-31857D229AA8</key>
+		<dict>
+			<key>className</key>
+			<string>IDECommandLineBuildLog</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>4C9BCE98-8578-497D-BE38-31857D229AA8.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+				<key>totalNumberOfAnalyzerIssues</key>
+				<integer>0</integer>
+				<key>totalNumberOfErrors</key>
+				<integer>0</integer>
+				<key>totalNumberOfTestFailures</key>
+				<integer>0</integer>
+				<key>totalNumberOfWarnings</key>
+				<integer>0</integer>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>FocusGuard project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>FocusGuard</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Building project FocusGuard with scheme FocusGuard and configuration Release</string>
+			<key>timeStartedRecording</key>
+			<real>803785626.91419995</real>
+			<key>timeStoppedRecording</key>
+			<real>803785673.455948</real>
+			<key>title</key>
+			<string>Building project FocusGuard with scheme FocusGuard and configuration Release</string>
+			<key>uniqueIdentifier</key>
+			<string>4C9BCE98-8578-497D-BE38-31857D229AA8</string>
+		</dict>
+		<key>A5AA6A1D-0459-431B-A953-95CB92BAD407</key>
+		<dict>
+			<key>className</key>
+			<string>IDECommandLineBuildLog</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>A5AA6A1D-0459-431B-A953-95CB92BAD407.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+				<key>totalNumberOfAnalyzerIssues</key>
+				<integer>0</integer>
+				<key>totalNumberOfErrors</key>
+				<integer>0</integer>
+				<key>totalNumberOfTestFailures</key>
+				<integer>0</integer>
+				<key>totalNumberOfWarnings</key>
+				<integer>0</integer>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>FocusGuard project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>FocusGuard</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Building project FocusGuard with scheme FocusGuard and configuration Release</string>
+			<key>timeStartedRecording</key>
+			<real>803785718.96686602</real>
+			<key>timeStoppedRecording</key>
+			<real>803785720.13752699</real>
+			<key>title</key>
+			<string>Building project FocusGuard with scheme FocusGuard and configuration Release</string>
+			<key>uniqueIdentifier</key>
+			<string>A5AA6A1D-0459-431B-A953-95CB92BAD407</string>
+		</dict>
+	</dict>
+</dict>
+</plist>

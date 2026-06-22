@@ -1,0 +1,24 @@
+{
+  "source": "/Users/huangjiawen/Documents/Codex/2026-06-21/build-ios-apps-plugin-build-ios-2/FocusGuardApp/Sources/Services/LiveActivityController.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "守住这一段时间",
+        "location": {
+          "startingColumn": 87,
+          "startingLine": 16
+        }
+      },
+      {
+        "comment": "",
+        "key": "本次专注已结束",
+        "location": {
+          "startingColumn": 87,
+          "startingLine": 24
+        }
+      }
+    ]
+  },
+  "version": 1
+}

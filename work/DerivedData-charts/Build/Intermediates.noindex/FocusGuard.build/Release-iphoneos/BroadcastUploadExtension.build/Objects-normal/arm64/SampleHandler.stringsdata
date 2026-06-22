@@ -1,0 +1,144 @@
+{
+  "source": "/Users/huangjiawen/Documents/Codex/2026-06-21/build-ios-apps-plugin-build-ios-2/BroadcastUploadExtension/SampleHandler.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "AI 守望未连接",
+        "location": {
+          "startingColumn": 46,
+          "startingLine": 30
+        }
+      },
+      {
+        "comment": "",
+        "key": "请先在专注守望中开始一场 AI 广播会话，再开启系统屏幕广播。",
+        "location": {
+          "startingColumn": 45,
+          "startingLine": 31
+        }
+      },
+      {
+        "comment": "",
+        "key": "没有可用的专注会话，屏幕广播已停止。",
+        "location": {
+          "startingColumn": 59,
+          "startingLine": 34
+        }
+      },
+      {
+        "comment": "",
+        "key": "AI 屏幕广播已开始。",
+        "location": {
+          "startingColumn": 47,
+          "startingLine": 43
+        }
+      },
+      {
+        "comment": "",
+        "key": "屏幕广播已自动停止",
+        "location": {
+          "startingColumn": 38,
+          "startingLine": 329
+        }
+      },
+      {
+        "comment": "",
+        "key": "AI 屏幕广播已暂停。",
+        "location": {
+          "startingColumn": 65,
+          "startingLine": 63
+        }
+      },
+      {
+        "comment": "",
+        "key": "AI 屏幕广播已恢复。",
+        "location": {
+          "startingColumn": 66,
+          "startingLine": 67
+        }
+      },
+      {
+        "comment": "",
+        "key": "AI 屏幕广播已停止。",
+        "location": {
+          "startingColumn": 70,
+          "startingLine": 77
+        }
+      },
+      {
+        "comment": "",
+        "key": "AI 守望已停止",
+        "location": {
+          "startingColumn": 42,
+          "startingLine": 79
+        }
+      },
+      {
+        "comment": "",
+        "key": "后续时间会记为未观测。",
+        "location": {
+          "startingColumn": 41,
+          "startingLine": 80
+        }
+      },
+      {
+        "comment": "",
+        "key": "专注会话已结束，屏幕广播已自动停止。",
+        "location": {
+          "startingColumn": 55,
+          "startingLine": 100
+        }
+      },
+      {
+        "comment": "",
+        "key": "AI 配置不可用",
+        "location": {
+          "startingColumn": 46,
+          "startingLine": 155
+        }
+      },
+      {
+        "comment": "",
+        "key": "广播扩展无法读取 API Key，请回到 App 重新保存 Provider。",
+        "location": {
+          "startingColumn": 45,
+          "startingLine": 156
+        }
+      },
+      {
+        "comment": "",
+        "key": "未配置可用的 AI 密钥。",
+        "location": {
+          "startingColumn": 97,
+          "startingLine": 160
+        }
+      },
+      {
+        "comment": "",
+        "key": "AI 分析暂时不可用。",
+        "location": {
+          "startingColumn": 97,
+          "startingLine": 215
+        }
+      },
+      {
+        "comment": "",
+        "key": "轻轻回到目标",
+        "location": {
+          "startingColumn": 45,
+          "startingLine": 278
+        }
+      },
+      {
+        "comment": "",
+        "key": "专注守望提醒",
+        "location": {
+          "startingColumn": 45,
+          "startingLine": 281
+        }
+      }
+    ]
+  },
+  "version": 1
+}

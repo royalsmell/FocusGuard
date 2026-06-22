@@ -1,0 +1,8 @@
+.DS_Store
+.build/
+DerivedData/
+FocusGuard.xcodeproj/
+Config/Local.xcconfig
+*.xcuserstate
+xcuserdata/
+

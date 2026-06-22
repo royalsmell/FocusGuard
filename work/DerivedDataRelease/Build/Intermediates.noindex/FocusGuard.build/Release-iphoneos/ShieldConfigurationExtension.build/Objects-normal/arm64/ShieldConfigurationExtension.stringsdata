@@ -1,0 +1,32 @@
+{
+  "source": "/Users/huangjiawen/Documents/Codex/2026-06-21/build-ios-apps-plugin-build-ios-2/ShieldConfigurationExtension/ShieldConfigurationExtension.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "先守住这一段时间",
+        "location": {
+          "startingColumn": 50,
+          "startingLine": 34
+        }
+      },
+      {
+        "comment": "",
+        "key": "你正在完成一个已经答应自己的目标。",
+        "location": {
+          "startingColumn": 53,
+          "startingLine": 35
+        }
+      },
+      {
+        "comment": "",
+        "key": "回到专注",
+        "location": {
+          "startingColumn": 63,
+          "startingLine": 36
+        }
+      }
+    ]
+  },
+  "version": 1
+}

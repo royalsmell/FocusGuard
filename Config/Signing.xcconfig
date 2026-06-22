@@ -1,0 +1,5 @@
+#include? "Local.xcconfig"
+
+CODE_SIGN_STYLE = Automatic
+DEVELOPMENT_TEAM = $(FOCUSGUARD_DEVELOPMENT_TEAM)
+
