@@ -6,8 +6,6 @@ public enum SharedConstants {
     public static let providerDefaultsKey = "ai.provider.configuration"
     public static let providerListDefaultsKey = "ai.provider.configurations.list"
     public static let activeProviderIDDefaultsKey = "ai.provider.active.id"
-    public static let providerListDefaultsKey = "ai.provider.configurations.list"
-    public static let activeProviderIDDefaultsKey = "ai.provider.active.id"
     public static let reminderPreferencesDefaultsKey = "reminders.preferences"
     public static let durationPreferencesDefaultsKey = "focus.duration.preferences"
     public static let analysisPreferencesDefaultsKey = "analysis.preferences"

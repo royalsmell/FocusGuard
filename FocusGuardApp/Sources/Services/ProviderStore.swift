@@ -54,16 +54,16 @@ final class ProviderStore {
         }
     }
 
-    func save(configuration: ProviderConfig, apiKey: *** throws {
-        try save(configuration: configuration, apiKey: *** modifiedAt: .now)
+    func save(configuration: ProviderConfig, apiKey: apiKey) throws {
+        try save(configuration: configuration, apiKey: apiKey, modifiedAt: .now)
     }
 
-    func applyImported(configuration: ProviderConfig, apiKey: *** modifiedAt: Date) throws {
+    func applyImported(configuration: ProviderConfig, apiKey: apiKey, modifiedAt: Date) throws {
         let preservedKey = apiKey ?? loadAPIKey(for: configuration.id)
-        try save(configuration: configuration, apiKey: *** modifiedAt: modifiedAt)
+        try save(configuration: configuration, apiKey: apiKey ?? preservedKey, modifiedAt: modifiedAt)
     }
 
-    private func save(configuration: ProviderConfig, apiKey: *** modifiedAt: Date) throws {
+    private func save(configuration: ProviderConfig, apiKey: apiKey, modifiedAt: Date) throws {
         if let index = providers.firstIndex(where: { $0.id == configuration.id }) {
             providers[index] = configuration
         } else {
@@ -72,9 +72,9 @@ final class ProviderStore {
         
         defaults.set(try JSONEncoder().encode(providers), forKey: SharedConstants.providerListDefaultsKey)
         
-        if let apiKey, !apiKey.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty {
+        if let key = apiKey, !key.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty {
             try KeychainStore.saveShared(
-                apiKey.trimmingCharacters(in: .whitespacesAndNewlines),
+                key.trimmingCharacters(in: .whitespacesAndNewlines),
                 account: configuration.id.uuidString,
                 preferredAccessGroup: keychainAccessGroup
             )
@@ -85,7 +85,6 @@ final class ProviderStore {
         dates.provider = modifiedAt
         try PreferenceModificationDatesStore.save(dates, defaults: defaults)
         
-        // If this is the first provider or the active one, refresh
         if activeProviderID == configuration.id || providers.count == 1 {
             if providers.count == 1 {
                 setActiveProvider(id: configuration.id)
@@ -135,7 +134,7 @@ final class ProviderStore {
 
     func makeService() -> OpenAICompatibleVisionService? {
         guard let key = loadAPIKey(), !key.isEmpty else { return nil }
-        return OpenAICompatibleVisionService(provider: configuration, apiKey: ***
+        return OpenAICompatibleVisionService(provider: configuration, apiKey: apiKey)
     }
 
     private func refreshKeyStatus() {
