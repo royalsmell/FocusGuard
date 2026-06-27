@@ -71,7 +71,7 @@ struct ProviderEditorView: View {
                 baseURL = current.baseURL.absoluteString
                 modelName = current.model
             } else {
-                name = "OpenAI Compatible"
+                name = "New Provider"
                 baseURL = "https://api.openai.com/v1"
                 modelName = "gpt-4o"
             }

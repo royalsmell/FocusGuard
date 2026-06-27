@@ -20,7 +20,7 @@ final class ProviderStore {
         self.defaults = UserDefaults(suiteName: SharedConstants.appGroupIdentifier) ?? .standard
         self.modifiedAt = PreferenceModificationDatesStore.load(defaults: self.defaults).provider
 
-        // Load list and active ID
+        // Migration & Loading
         var loadedProviders: [ProviderConfig] = []
         if let data = defaults.data(forKey: SharedConstants.providerListDefaultsKey),
            let list = try? JSONDecoder().decode([ProviderConfig].self, from: data) {
@@ -54,16 +54,16 @@ final class ProviderStore {
         }
     }
 
-    func save(configuration: ProviderConfig, apiKey: apiKey) throws {
+    func save(configuration: ProviderConfig, apiKey: String?) throws {
         try save(configuration: configuration, apiKey: apiKey, modifiedAt: .now)
     }
 
-    func applyImported(configuration: ProviderConfig, apiKey: apiKey, modifiedAt: Date) throws {
+    func applyImported(configuration: ProviderConfig, apiKey: String?, modifiedAt: Date) throws {
         let preservedKey = apiKey ?? loadAPIKey(for: configuration.id)
         try save(configuration: configuration, apiKey: apiKey ?? preservedKey, modifiedAt: modifiedAt)
     }
 
-    private func save(configuration: ProviderConfig, apiKey: apiKey, modifiedAt: Date) throws {
+    private func save(configuration: ProviderConfig, apiKey: String?, modifiedAt: Date) throws {
         if let index = providers.firstIndex(where: { $0.id == configuration.id }) {
             providers[index] = configuration
         } else {
@@ -134,7 +134,7 @@ final class ProviderStore {
 
     func makeService() -> OpenAICompatibleVisionService? {
         guard let key = loadAPIKey(), !key.isEmpty else { return nil }
-        return OpenAICompatibleVisionService(provider: configuration, apiKey: apiKey)
+        return OpenAICompatibleVisionService(provider: configuration, apiKey: key)
     }
 
     private func refreshKeyStatus() {
