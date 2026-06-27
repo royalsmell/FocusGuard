@@ -5,42 +5,73 @@ import SharedCore
 @MainActor
 @Observable
 final class ProviderStore {
-    private(set) var configuration: ProviderConfig
+    private(set) var providers: [ProviderConfig] = []
+    private(set) var activeProviderID: UUID
     private(set) var hasAPIKey = false
     private(set) var modifiedAt: Date
 
     private let defaults: UserDefaults
 
+    var configuration: ProviderConfig {
+        providers.first { $0.id == activeProviderID } ?? providers.first ?? .suggested
+    }
+
     init() {
         self.defaults = UserDefaults(suiteName: SharedConstants.appGroupIdentifier) ?? .standard
         self.modifiedAt = PreferenceModificationDatesStore.load(defaults: self.defaults).provider
-        if let data = defaults.data(forKey: SharedConstants.providerDefaultsKey),
-           let value = try? JSONDecoder().decode(ProviderConfig.self, from: data) {
-            self.configuration = value
-        } else {
-            self.configuration = .suggested
+
+        // Load list and active ID
+        var loadedProviders: [ProviderConfig] = []
+        if let data = defaults.data(forKey: SharedConstants.providerListDefaultsKey),
+           let list = try? JSONDecoder().decode([ProviderConfig].self, from: data) {
+            loadedProviders = list
+        } else if let data = defaults.data(forKey: SharedConstants.providerDefaultsKey),
+                  let single = try? JSONDecoder().decode(ProviderConfig.self, from: data) {
+            loadedProviders = [single]
         }
+
+        if loadedProviders.isEmpty {
+            loadedProviders = [.suggested]
+        }
+        self.providers = loadedProviders
+
+        if let idString = defaults.string(forKey: SharedConstants.activeProviderIDDefaultsKey),
+           let id = UUID(uuidString: idString),
+           loadedProviders.contains(where: { $0.id == id }) {
+            self.activeProviderID = id
+        } else {
+            self.activeProviderID = loadedProviders.first!.id
+        }
+
         refreshKeyStatus()
     }
 
-    func save(configuration: ProviderConfig, apiKey: String?) throws {
-        try save(configuration: configuration, apiKey: apiKey, modifiedAt: .now)
-    }
-
-    func applyImported(configuration: ProviderConfig, apiKey: String?, modifiedAt: Date) throws {
-        let preservedKey = apiKey ?? loadAPIKey()
-        try save(configuration: configuration, apiKey: preservedKey, modifiedAt: modifiedAt)
-    }
-
-    private func save(configuration: ProviderConfig, apiKey: String?, modifiedAt: Date) throws {
-        if configuration.id != self.configuration.id {
-            KeychainStore.deleteShared(
-                account: self.configuration.id.uuidString,
-                preferredAccessGroup: keychainAccessGroup
-            )
+    func setActiveProvider(id: UUID) {
+        if providers.contains(where: { $0.id == id }) {
+            self.activeProviderID = id
+            defaults.set(id.uuidString, forKey: SharedConstants.activeProviderIDDefaultsKey)
+            refreshKeyStatus()
         }
-        self.configuration = configuration
-        defaults.set(try JSONEncoder().encode(configuration), forKey: SharedConstants.providerDefaultsKey)
+    }
+
+    func save(configuration: ProviderConfig, apiKey: *** throws {
+        try save(configuration: configuration, apiKey: *** modifiedAt: .now)
+    }
+
+    func applyImported(configuration: ProviderConfig, apiKey: *** modifiedAt: Date) throws {
+        let preservedKey = apiKey ?? loadAPIKey(for: configuration.id)
+        try save(configuration: configuration, apiKey: *** modifiedAt: modifiedAt)
+    }
+
+    private func save(configuration: ProviderConfig, apiKey: *** modifiedAt: Date) throws {
+        if let index = providers.firstIndex(where: { $0.id == configuration.id }) {
+            providers[index] = configuration
+        } else {
+            providers.append(configuration)
+        }
+        
+        defaults.set(try JSONEncoder().encode(providers), forKey: SharedConstants.providerListDefaultsKey)
+        
         if let apiKey, !apiKey.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty {
             try KeychainStore.saveShared(
                 apiKey.trimmingCharacters(in: .whitespacesAndNewlines),
@@ -48,16 +79,44 @@ final class ProviderStore {
                 preferredAccessGroup: keychainAccessGroup
             )
         }
+        
         self.modifiedAt = modifiedAt
         var dates = PreferenceModificationDatesStore.load(defaults: defaults)
         dates.provider = modifiedAt
         try PreferenceModificationDatesStore.save(dates, defaults: defaults)
+        
+        // If this is the first provider or the active one, refresh
+        if activeProviderID == configuration.id || providers.count == 1 {
+            if providers.count == 1 {
+                setActiveProvider(id: configuration.id)
+            }
+            refreshKeyStatus()
+        }
+    }
+
+    func deleteProvider(id: UUID) {
+        KeychainStore.deleteShared(
+            account: id.uuidString,
+            preferredAccessGroup: keychainAccessGroup
+        )
+        providers.removeAll { $0.id == id }
+        defaults.set(try? JSONEncoder().encode(providers), forKey: SharedConstants.providerListDefaultsKey)
+        
+        if activeProviderID == id {
+            if let first = providers.first {
+                setActiveProvider(id: first.id)
+            }
+        }
         refreshKeyStatus()
     }
 
     func loadAPIKey() -> String? {
+        loadAPIKey(for: configuration.id)
+    }
+
+    func loadAPIKey(for id: UUID) -> String? {
         KeychainStore.loadShared(
-            account: configuration.id.uuidString,
+            account: id.uuidString,
             preferredAccessGroup: keychainAccessGroup
         )
     }
@@ -76,7 +135,7 @@ final class ProviderStore {
 
     func makeService() -> OpenAICompatibleVisionService? {
         guard let key = loadAPIKey(), !key.isEmpty else { return nil }
-        return OpenAICompatibleVisionService(provider: configuration, apiKey: key)
+        return OpenAICompatibleVisionService(provider: configuration, apiKey: ***
     }
 
     private func refreshKeyStatus() {

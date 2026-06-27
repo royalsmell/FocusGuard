@@ -5,6 +5,8 @@ struct ProviderEditorView: View {
     @Environment(\.dismiss) private var dismiss
     @Environment(AppModel.self) private var model
 
+    let initialConfig: ProviderConfig?
+
     @State private var name = ""
     @State private var baseURL = ""
     @State private var modelName = ""
@@ -27,7 +29,7 @@ struct ProviderEditorView: View {
                     .keyboardType(.URL)
                 TextField("模型", text: $modelName)
                     .textInputAutocapitalization(.never)
-                SecureField(model.providerStore.hasAPIKey ? "API Key（留空则保留）" : "API Key", text: $apiKey)
+                SecureField(hasExistingKey ? "API Key（留空则保留）" : "API Key", text: $apiKey)
                     .textInputAutocapitalization(.never)
             }
 
@@ -52,7 +54,7 @@ struct ProviderEditorView: View {
                 Text("Base URL 可填写 https://…/v1 或完整的 /chat/completions 地址。局域网地址会触发本地网络权限。")
             }
         }
-        .navigationTitle("AI Provider")
+        .navigationTitle(initialConfig == nil ? "添加 API" : "编辑 API")
         .navigationBarTitleDisplayMode(.inline)
         .toolbar {
             ToolbarItem(placement: .cancellationAction) {
@@ -64,11 +66,23 @@ struct ProviderEditorView: View {
             }
         }
         .onAppear {
-            let current = model.providerStore.configuration
-            name = current.name
-            baseURL = current.baseURL.absoluteString
-            modelName = current.model
+            if let current = initialConfig {
+                name = current.name
+                baseURL = current.baseURL.absoluteString
+                modelName = current.model
+            } else {
+                name = "OpenAI Compatible"
+                baseURL = "https://api.openai.com/v1"
+                modelName = "gpt-4o"
+            }
         }
+    }
+
+    private var hasExistingKey: Bool {
+        if let id = initialConfig?.id {
+            return !(model.providerStore.loadAPIKey(for: id) ?? "").isEmpty
+        }
+        return false
     }
 
     @ViewBuilder
@@ -91,9 +105,10 @@ struct ProviderEditorView: View {
               ["http", "https"].contains(scheme),
               url.host != nil,
               !modelName.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty else { return nil }
-        let current = model.providerStore.configuration
+        
+        let id = initialConfig?.id ?? UUID()
         let configuration = ProviderConfig(
-            id: current.id,
+            id: id,
             name: name.isEmpty ? "OpenAI Compatible" : name,
             baseURL: url,
             model: modelName.trimmingCharacters(in: .whitespacesAndNewlines)
@@ -116,7 +131,7 @@ struct ProviderEditorView: View {
 
     private func testConnection() async {
         guard let configuration else { return }
-        let key = apiKey.isEmpty ? model.providerStore.loadAPIKey() : apiKey
+        let key = apiKey.isEmpty ? (initialConfig != nil ? model.providerStore.loadAPIKey(for: initialConfig!.id) : nil) : apiKey
         guard let key, !key.isEmpty else {
             testState = .failed(String(localized: "缺少 API Key"))
             return

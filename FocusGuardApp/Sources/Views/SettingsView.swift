@@ -15,19 +15,14 @@ struct SettingsView: View {
     var body: some View {
         List {
             Section("AI Provider") {
-                Button {
-                    router.presentedSheet = .providerEditor
-                } label: {
+                NavigationLink(destination: ProviderListView()) {
                     HStack {
                         Label(model.providerStore.configuration.name, systemImage: "sparkles")
                         Spacer()
                         Text(model.providerStore.hasAPIKey ? "已配置" : "需要密钥")
                             .foregroundStyle(model.providerStore.hasAPIKey ? .green : .orange)
-                        Image(systemName: "chevron.right")
-                            .foregroundStyle(.tertiary)
                     }
                 }
-                .foregroundStyle(.primary)
             }
 
             Section {

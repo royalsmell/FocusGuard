@@ -38,8 +38,7 @@ struct RootView: View {
                         index: index,
                         initialMinutes: model.durationPreferences.quickMinutes[index]
                     )
-                case .providerEditor:
-                    ProviderEditorView()
+
                 }
             }
             .presentationDetents(destination == .broadcastAuthorization ? [.medium, .large] : [.large])

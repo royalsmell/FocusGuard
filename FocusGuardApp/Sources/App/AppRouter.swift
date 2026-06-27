@@ -9,13 +9,11 @@ enum AppTab: Hashable {
 enum SheetDestination: Identifiable, Hashable {
     case broadcastAuthorization
     case durationPresetEditor(index: Int)
-    case providerEditor
 
     var id: String {
         switch self {
         case .broadcastAuthorization: "broadcast-authorization"
         case .durationPresetEditor(let index): "duration-preset-\(index)"
-        case .providerEditor: "provider-editor"
         }
     }
 }
